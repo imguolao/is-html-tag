@@ -1,5 +1,5 @@
-function isHTMLTag(elName: string): boolean {
-  return !!elName && document.createElement(elName.toUpperCase()).toString() !== '[object HTMLUnknownElement]'
+function isHTMLTag(tag: string): boolean {
+  return !!tag && document.createElement(tag.toUpperCase()).toString() !== '[object HTMLUnknownElement]'
 }
 
 export { isHTMLTag }

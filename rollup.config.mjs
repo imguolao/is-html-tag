@@ -73,11 +73,7 @@ export default [
       format: 'es',
     },
     plugins: [
-      dts({
-        compilerOptions: {
-          preserveSymlinks: false,
-        },
-      }),
+      dts(),
     ],
   },
 ]
