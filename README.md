@@ -8,19 +8,19 @@ Check if the string is an HTML tag name.
 
 ```sh
 # npm
-npm i is-html-tag
+npm i @guolao/is-html-tag
 
 # yarn
-yarn add is-html-tag
+yarn add @guolao/is-html-tag
 
 # pnpm
-pnpm add is-html-tag
+pnpm add @guolao/is-html-tag
 ```
 
 ## Usage
 
 ```ts
-import isHTMLTag from 'is-html-tag'
+import isHTMLTag from '@guolao/is-html-tag'
 
 isHTMLTag('a')   // true
 isHTMLTag('div') // true
