@@ -1,0 +1,79 @@
+{
+  "name": "is-html-tag",
+  "version": "0.0.0",
+  "description": "Check if the string is an HTML tag name.",
+  "author": {
+    "name": "guolao",
+    "email": "guolao.mq@foxmail.com"
+  },
+  "main": "lib/cjs/index.js",
+  "module": "lib/es/index.js",
+  "unpkg": "lib/umd/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "rimraf lib && rollup -c",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md README.*",
+    "eslint-fix": "eslint --fix ./index.ts",
+    "version": "npm run changelog",
+    "prepublishOnly": "npm run build",
+    "prepare": "husky install",
+    "release": "npx np"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imguolao/is-html-tag"
+  },
+  "keywords": [
+    "HTML",
+    "HTML Element",
+    "HTML Tag",
+    "is HTML Element",
+    "is HTML Tag",
+    "valid HTML Element",
+    "valid HTML Tag"
+  ],
+  "files": [
+    "lib",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imguolao/is-html-tag"
+  },
+  "homepage": "",
+  "lint-staged": {
+    "index.ts": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "conventional-changelog-cli": "^2.2.2",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.1",
+    "np": "^7.6.3",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.1.2",
+    "rollup": "^3.15.0",
+    "rollup-plugin-dts": "^5.1.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.9.5"
+  }
+}
